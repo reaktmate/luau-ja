@@ -5,25 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luau ドキュメント</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="highlight.min.css"> <!-- コードハイライトCSS -->
 </head>
 <body>
     <header>
         <h1>Luau ドキュメント</h1>
-        <nav>
-            <a href="index.html">ホーム</a>
-            <a href="getting-started.html">はじめに</a>
-            <a href="syntax.html">構文リファレンス</a>
+        <div id="menu-btn">☰</div>
+        <nav id="nav-menu">
+            <a href="index.html">🏠 ホーム</a>
+            <a href="getting-started.html">🚀 はじめに</a>
+            <a href="syntax.html">📜 構文リファレンス</a>
         </nav>
     </header>
 
     <main>
         <h2>ようこそ</h2>
-        <p>このサイトは、Roblox Studioで使われる<strong>Luau</strong>の基本文法やチュートリアルをまとめたものです。</p>
+        <p>このサイトはRoblox Studioで使われる<strong>Luau</strong>の解説とリファレンスをまとめたものです。</p>
         <p>初心者から中級者まで役立つ内容を掲載しています٩(๑❛ᴗ❛๑)۶</p>
     </main>
 
     <footer>
         <p>&copy; 2025 Yusuke Docs</p>
     </footer>
+
+    <script src="highlight.min.js"></script> <!-- ハイライトJS -->
+    <script>hljs.highlightAll();</script>
+    <script src="script.js"></script> <!-- ハンバーガー制御 -->
 </body>
 </html>
+
