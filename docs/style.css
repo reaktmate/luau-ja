@@ -9,14 +9,28 @@ header {
     background: linear-gradient(to right, #0066ff, #00ccff);
     padding: 15px;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 1.2rem;
+}
+
+#menu-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
 }
 
 nav a {
-    margin-right: 15px;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -41,3 +55,24 @@ footer {
     background: #222;
     color: white;
 }
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+    #menu-btn {
+        display: block;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #0044aa;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+    }
+    nav.show {
+        display: flex;
+    }
+}
+
