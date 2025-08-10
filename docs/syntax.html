@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luau 構文リファレンス</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Luau ドキュメント</h1>
+    <nav>
+        <a href="index.html">ホーム</a>
+        <a href="getting-started.html">はじめに</a>
+        <a href="syntax.html">構文リファレンス</a>
+    </nav>
+</header>
+
+<main>
+    <h2>変数</h2>
+    <pre><code>local name = "Yusuke"
+local age = 15
+print(name, age)</code></pre>
+
+    <h2>条件分岐</h2>
+    <pre><code>if age >= 18 then
+    print("成人です")
+else
+    print("未成年です")
+end</code></pre>
+
+    <h2>関数</h2>
+    <pre><code>local function greet(playerName)
+    print("こんにちは, " .. playerName)
+end
+
+greet("祐介")</code></pre>
+</main>
+
+<footer>
+    <p>&copy; 2025 Yusuke Docs</p>
+</footer>
+</body>
+</html>
